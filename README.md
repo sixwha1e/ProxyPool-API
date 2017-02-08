@@ -1,6 +1,6 @@
 # ProxyPool-API
 
-> 基于python2.7.X & MongoDB的IP代理池API
+> 基于python2.7.X, MongoDB, Flask的IP代理池API
 
 ### 安装依赖库：
 
