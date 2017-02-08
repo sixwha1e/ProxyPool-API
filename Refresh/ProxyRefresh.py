@@ -6,10 +6,9 @@ from DB.ProxyClient import ProxyClient
 from multiprocessing import Process
 import requests
 import time
-import sys
 
 
-class ProxyRefreshSchedule(ProxyClient):
+class ProxyRefresh(ProxyClient):
     '''
     定时更新代理
     '''
@@ -34,7 +33,7 @@ class ProxyRefreshSchedule(ProxyClient):
 
 
 def refreshPool():
-    p = ProxyRefreshSchedule()
+    p = ProxyRefresh()
     p.validProxy()
 
 
